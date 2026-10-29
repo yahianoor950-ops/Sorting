@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sort Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Sort<span>Lab</span></h1>
+    <p>Learn sorting algorithms by watching them work, step by step.</p>
+  </header>
+
+  <main class="cards">
+    <article class="card">
+      <span class="tag">Divide &amp; Conquer</span>
+      <h2>Merge Sort</h2>
+      <p>Splits the array into halves, sorts each half recursively, then merges the two sorted halves into one sorted array.</p>
+      <ul>
+        <li>Best / Avg / Worst: <b>O(n log n)</b></li>
+        <li>Space: <b>O(n)</b></li>
+        <li>Stable: <b>Yes</b></li>
+      </ul>
+      <a class="btn" href="sort.html?algo=merge">Try yourself →</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Divide &amp; Conquer</span>
+      <h2>Quick Sort</h2>
+      <p>Picks a pivot, moves smaller items to its left and bigger items to its right, then repeats on both sides.</p>
+      <ul>
+        <li>Best / Avg: <b>O(n log n)</b></li>
+        <li>Worst: <b>O(n²)</b></li>
+        <li>Space: <b>O(log n)</b></li>
+      </ul>
+      <a class="btn" href="sort.html?algo=quick">Try yourself →</a>
+    </article>
+  </main>
+
+  <footer>Built with HTML · CSS · JavaScript</footer>
+  <script src="main.js"></script>
+</body>
+</html>

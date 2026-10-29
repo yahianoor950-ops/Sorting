@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualizer · SortLab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a href="index.html" class="back">← Back</a>
+    <h1 id="title">Sort Visualizer</h1>
+  </header>
+
+  <main class="panel">
+    <div class="row">
+      <input id="input" value="38, 27, 43, 3, 9, 82, 10" placeholder="e.g. 5, 2, 9, 1">
+      <button id="random" class="ghost">Random</button>
+      <button id="start" class="btn">Start</button>
+    </div>
+
+    <div id="bars" class="bars"></div>
+    <p id="msg" class="msg">Enter numbers separated by commas, then press Start.</p>
+
+    <div class="row controls">
+      <button id="prev" class="ghost">◀ Prev</button>
+      <button id="play" class="ghost">Pause</button>
+      <button id="next" class="ghost">Next ▶</button>
+      <label>Speed <input id="speed" type="range" min="1" max="10" value="5"></label>
+      <span id="count" class="count">0 / 0</span>
+    </div>
+
+    <div class="legend">
+      <i class="c-cmp"></i>Comparing <i class="c-piv"></i>Pivot <i class="c-done"></i>Sorted
+    </div>
+    <ol id="log" class="log"></ol>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
